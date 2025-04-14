@@ -20,5 +20,6 @@ from a_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('footer/', views.footer, name='footer')
 ]

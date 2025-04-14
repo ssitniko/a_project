@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'a_app/index.html')
+
+def footer(request):
+    return render(request, 'a_app/footer.html')
