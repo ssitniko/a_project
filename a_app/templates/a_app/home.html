@@ -12,7 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'a_app/style.css' %}">
   </head>
   <body>
     <div class="navbar-main">
@@ -25,8 +25,8 @@
           </li>
           <li><a href="{% url 'home' %}">Главная</a></li>
           <li><a href="{% url 'catalog' %}">Каталог</a></li>
-          <li><a href=" {% url 'aboutus' %}">О нас</a></li>
-          <li><a href="{% url 'paymentdelivery' %}">Оплата и доставка</a></li>
+          <li><a href="{% url 'about_us' %}">О нас</a></li>
+          <li><a href="{% url 'payment_delivery' %}">Оплата и доставка</a></li>
           <li><a href="{% url 'feedback' %}">Отзывы</a></li>
           <li><a href="{% url 'contacts' %}">Контакты</a></li>
         </ul>

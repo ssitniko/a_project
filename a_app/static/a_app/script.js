@@ -1,26 +1,32 @@
 
-// добавить обработчик выведения имя отзывов
 const nameInput = document.getElementById('nameInput');
+const emailInput = document.getElementById('emailInput');
 const feedbackInput = document.getElementById('feedbackInput');
+const ratingInput = document.querySelector('input[name="rating"]');
 const addButton = document.getElementById('addButton');
 const nameOutput = document.getElementById('nameOutput');
 
 function updateList() {
   nameOutput.innerHTML = '';
-  const items =  JSON.parse(localStorage.getItem('items') || '[]');
+  const items = JSON.parse(localStorage.getItem('items') || '[]');
 
   items.forEach(item => {
-    if (item.name && item.feedback) {
-
+    if (item.name && item.feedback && item.rating) {
       const listItem = document.createElement('li');
+      listItem.classList.add('mb-3');
 
       const nameElement = document.createElement('strong');
       nameElement.textContent = item.name;
 
-      const feedbackElement  = document.createElement('p');
+      const ratingElement = document.createElement('span');
+      ratingElement.textContent = ` ★ ${item.rating}`;
+
+      const feedbackElement = document.createElement('p');
       feedbackElement.textContent = item.feedback;
 
       listItem.appendChild(nameElement);
+      listItem.appendChild(ratingElement);
+      listItem.appendChild(document.createElement('br'));
       listItem.appendChild(feedbackElement);
 
       nameOutput.appendChild(listItem);
@@ -30,37 +36,28 @@ function updateList() {
 
 addButton.addEventListener('click', () => {
   const nameValue = nameInput.value.trim();
+  const emailValue = emailInput.value.trim();
   const feedbackValue = feedbackInput.value.trim();
+  const ratingValue = ratingInput.value.trim();
 
-
-  if (nameValue, feedbackValue) {
-    const items =  JSON.parse(localStorage.getItem('items') || '[]');
-    items.push({ name: nameValue, feedback: feedbackValue });
+  if (nameValue && emailValue && feedbackValue && ratingValue) {
+    const items = JSON.parse(localStorage.getItem('items') || '[]');
+    items.push({
+      name: nameValue,
+      email: emailValue,
+      feedback: feedbackValue,
+      rating: ratingValue
+    });
 
     localStorage.setItem('items', JSON.stringify(items));
 
     nameInput.value = '';
+    emailInput.value = '';
     feedbackInput.value = '';
+    ratingInput.value = '';
 
     updateList();
   }
 });
 
 updateList();
-
-
-
-// Код без сохранения данных между сессиями, возможно пригодится при использовании с базой данных
-
-/* addButton.addEventListener('click', () => {
-  const value = nameInput.value;
-
-  if (value) {
-    const newItem = document.createElement('li');
-    newItem.textContent = value;
-    nameOutput.appendChild(newItem);
-
-    nameInput.value = '';
-  }
-});
- */

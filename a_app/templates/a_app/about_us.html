@@ -12,7 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{% static 'a_app/style.css' %}" />
   </head>
   <body>
     <div class="navbar-main">
@@ -20,15 +20,15 @@
         <ul>
           <li>
             <a href="#">
-              <img src="AK.png" alt="photo" width="60" />
+              <img src="{% static 'images/AK.png' %}" alt="photo" width="60" />
             </a>
           </li>
-          <li><a href="./indexwork.html">Главная</a></li>
-          <li><a href="./catalog.html">Каталог</a></li>
-          <li><a href="./aboutus.html">О нас</a></li>
-          <li><a href="./paymentdelivery.html">Оплата и доставка</a></li>
-          <li><a href="./feedback.html">Отзывы</a></li>
-          <li><a href="./contacts.html">Контакты</a></li>
+          <li><a href="{% url 'home' %}">Главная</a></li>
+          <li><a href="{% url 'catalog' %}">Каталог</a></li>
+          <li><a href="{% url 'about_us' %}">О нас</a></li>
+          <li><a href="{% url 'payment_delivery' %}">Оплата и доставка</a></li>
+          <li><a href="{% url 'feedback' %}">Отзывы</a></li>
+          <li><a href="{% url 'contacts' %}">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -75,7 +75,7 @@
       <div class="container-fluid my-5" style="background-color: aliceblue">
         <div class="global-footer">
           <div class="footer-block">
-            <img src="AK.png" alt="photo" width="60" />
+            <img src="{% static 'images/AK.png' %}" alt="photo" width="60" />
           </div>
           <div class="footer-block">
             <a href="#" style="font-weight: bold">Оформить заказ</a>

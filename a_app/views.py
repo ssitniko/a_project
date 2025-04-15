@@ -20,3 +20,18 @@ def feedback_view(request):
 def payment_delivery_view(request):
     return render(request, 'a_pp/payment_delivery.html')
 
+
+def lampshades_view(request):
+    return render(request, 'a_app/catalog/lampshades.html')
+
+def chandeliers_view(request):
+    return render(request, 'a_app/catalog/chandeliers.html')
+
+def mirrors_view(request):
+    return render(request, 'a_app/catalog/mirrors.html')
+
+def other_view(request):
+    return render(request, 'a_app/catalog/other.html')
+
+def pano_view(request):
+    return render(request, 'a_app/catalog/pano.html')
