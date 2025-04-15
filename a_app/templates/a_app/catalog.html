@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АКорзина</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar-main">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="AK.png" alt="photo" width="60" />
+            </a>
+          </li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <li><a href="./aboutus.html">О нас</a></li>
+          <li><a href="./paymentdelivery.html">Оплата и доставка</a></li>
+          <li><a href="./feedback.html">Отзывы</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="list-group">
+            <a href="./catalog/lampshades.html" class="list-group-item"
+              >Абажуры</a
+            >
+            <a href="./catalog/chandeliers.html" class="list-group-item"
+              >Люстры</a
+            >
+            <a href="./catalog/pano.html" class="list-group-item"
+              >Пано</a
+            >
+            <a href="./catalog/mirrors.html" class="list-group-item"
+              >Зеркала</a
+            >
+            <a href="./catalog/other.html" class="list-group-item"
+              >Другое</a
+            >
+          </div>
+        </div>
+        <div class="col-md-8 products">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="img/lampshades/cat_1.jpg" alt="somephoto" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="./catalog/lampshades.html">Абажуры</a>
+                </p>
+                <p class="product-desc">Описание1. ..</p>
+                <p class="product-price">Цена: KGS3000</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="img/chandeliers/cat_2.jpg" alt="somephoto" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="./catalog/chandeliers.html">Люстры</a>
+                </p>
+                <p class="product-desc">Описание1. ..</p>
+                <p class="product-price">Цена: KGS3000</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="img/mirrors/cat_3.jpg" alt="somephoto" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="./catalog/mirrors.html">Зеркала</a>
+                </p>
+                <p class="product-desc">Описание1. ..</p>
+                <p class="product-price">Цена: KGS3000</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="img/pano/dog-sunglasses_ZVCXJVXL75.jpg" alt="somephoto" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="./catalog/pano.html">Пано</a>
+                </p>
+                <p class="product-desc">Описание1. ..</p>
+                <p class="product-price">Цена: KGS3000</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="img/other/seagull-water_7IK961PQJI.jpg" alt="somephoto" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="./catalog/other.html">Прочее</a>
+                </p>
+                <p class="product-desc">Описание1. ..</p>
+                <p class="product-price">Цена: KGS3000</p>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="card-group">
+      <div class="card" class="card-img-top" style="width: 18rem">
+        <img src="cat_1.jpg" alt="somephoto" />
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карточки</h6>
+          <p class="card-text">Пример текста</p>
+          <a href="#" class="btn btn-primary">Перейти по ссылке</a>
+        </div>
+      </div>
+      <div class="card" class="card-img-top" style="width: 18rem">
+        <img src="cat_1.jpg" class="card-img-top" alt="somephoto" />
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карточки</h6>
+          <p class="card-text">Пример текста</p>
+          <a href="#" class="btn btn-primary">Перейти по ссылке</a>
+        </div>
+      </div>
+    </div> -->
+
+    <footer>
+      <div class="container-fluid my-5" style="background-color: aliceblue">
+        <div class="global-footer">
+          <div class="footer-block">
+            <img src="AK.png" alt="photo" width="60" />
+          </div>
+          <div class="footer-block">
+            <a href="#" style="font-weight: bold">Оформить заказ</a>
+          </div>
+          <div class="footer-block">
+            <div
+              class="footer-block-inside"
+              style="display: block; width: 127px"
+            >
+              <a href="#" style="font-weight: bold">фотопоток</a>
+              <a href="#">фотопоток</a>
+            </div>
+          </div>
+          <div class="footer-block">
+            <div
+              class="footer-block-inside"
+              style="display: block; width: 200px"
+            >
+              <a href="#" style="font-weight: bold">наши контакты</a>
+              <a href="#">+996(555)555555</a>
+              <a href="#">г.Бишкек,Тункгуч****</a>
+              <a href="mailto:abakdf@gmail.com">Отправить сообщение в никуда</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
