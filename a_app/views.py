@@ -12,13 +12,13 @@ def about_us_view(request):
     return render(request, 'a_app/about_us.html')
 
 def contacts_view(request):
-    return render(request, 'a_pp/contacts.html')
+    return render(request, 'a_app/contacts.html')
 
 def feedback_view(request):
-    return render(request, 'a_pp/feedback.html')
+    return render(request, 'a_app/feedback.html')
 
 def payment_delivery_view(request):
-    return render(request, 'a_pp/payment_delivery.html')
+    return render(request, 'a_app/payment_delivery.html')
 
 
 def lampshades_view(request):

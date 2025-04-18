@@ -12,6 +12,7 @@ urlpatterns = [
     path('catalog/lampshades/', views.lampshades_view, name='lampshades'),
     path('catalog/mirrors/', views.mirrors_view, name='mirrors'),
     path('catalog/pano/', views.pano_view, name='pano'),
+    path('catalog/other/', views.other_view, name='other'),
 
 
 ]

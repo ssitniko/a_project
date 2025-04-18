@@ -12,7 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="{% static 'a_app/style.css' %}" />
   </head>
   <body>
     <div class="navbar-main">
@@ -20,15 +20,15 @@
         <ul>
           <li>
             <a href="#">
-              <img src="../AK.png" alt="photo" width="60" />
+              <img src="{% static 'images/AK.png' %}" alt="photo" width="60" />
             </a>
           </li>
-          <li><a href="../index.html">Главная</a></li>
-          <li><a href="../catalog.html">Каталог</a></li>
-          <li><a href="../aboutus.html">О нас</a></li>
-          <li><a href="../paymentdelivery.html">Оплата и доставка</a></li>
-          <li><a href="../feedback.html">Отзывы</a></li>
-          <li><a href="../contacts.html">Контакты</a></li>
+          <li><a href="{% url 'home' %}">Главная</a></li>
+          <li><a href="{% url 'catalog' %}">Каталог</a></li>
+          <li><a href="{% url 'about_us' %}">О нас</a></li>
+          <li><a href="{% url 'payment_delivery' %}">Оплата и доставка</a></li>
+          <li><a href="{% url 'feedback' %}">Отзывы</a></li>
+          <li><a href="{% url 'contacts' %}">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -37,19 +37,19 @@
       <div class="row">
         <div class="col-md-4">
           <div class="list-group">
-            <a href="lampshades.html" class="list-group-item"
+           <a href="{% url 'lampshades' %}" class="list-group-item"
               >Абажуры</a
             >
-            <a href="chandeliers.html" class="list-group-item"
+            <a href="{% url 'chandeliers' %}" class="list-group-item"
               >Люстры</a
             >
-            <a href="pano.html" class="list-group-item"
+            <a href="{% url 'pano' %}" class="list-group-item"
               >Пано</a
             >
-            <a href="mirrors.html" class="list-group-item"
+            <a href="{% url 'mirrors' %}" class="list-group-item"
               >Зеркала</a
             >
-            <a href="other.html" class="list-group-item"
+            <a href="{% url 'other' %}" class="list-group-item"
               >Другое</a
             >
           </div>
@@ -59,7 +59,7 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="../img/mirrors/animal-dog_ZO5GDP2QY1.jpg" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
                   <a href="#">Зеракало_1</a>
@@ -71,7 +71,7 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="../img/mirrors/animal-dog_ZO5GDP2QY1.jpg" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
                   <a href="#">Зеракало_2</a>
@@ -83,7 +83,7 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="../img/mirrors/animal-dog_ZO5GDP2QY1.jpg" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
                   <a href="#">Зеракало_3</a>
@@ -95,7 +95,7 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="../img/mirrors/animal-dog_ZO5GDP2QY1.jpg" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
                   <a href="#">Зеракало_4</a>
@@ -108,7 +108,7 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="../img/mirrors/animal-dog_ZO5GDP2QY1.jpg" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
                   <a href="#">Зеракало_5</a>
@@ -149,7 +149,7 @@
       <div class="container-fluid my-5" style="background-color: aliceblue">
         <div class="global-footer">
           <div class="footer-block">
-            <img src="AK.png" alt="photo" width="60" />
+            <img src="{% static 'a_app/AK.png' %}" alt="photo" width="60" />
           </div>
           <div class="footer-block">
             <a href="#" style="font-weight: bold">Оформить заказ</a>
