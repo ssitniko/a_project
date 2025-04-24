@@ -1,5 +1,5 @@
 """
-URL configuration for a_project project.
+URL configuration for akorzina project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from a_app import views
+from akorzina import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('a_app.urls')),
+    path('', include('akorzina.urls')),
 
 ]
 

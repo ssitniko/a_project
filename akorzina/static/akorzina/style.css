@@ -1,0 +1,59 @@
+/* ==== Общие стили ==== */
+
+.page-content.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* ==== Заголовки ==== */
+
+h1.pb-4 {
+    padding-bottom: 30px;
+}
+
+h2.pb-3 {
+    padding-bottom: 20px;
+}
+
+/* ==== Контактная информация ==== */
+
+.contact-info {
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Ссылки ==== */
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ==== Дополнительно ==== */
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* ==== Навигация ==== */
+/* Удали рамку, если закончилась отладка */
+.navbar-nav {
+    /* border: 2px solid red; */
+}

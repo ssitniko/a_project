@@ -12,8 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'a_app/style.css' %}" />
-
+    <link rel="stylesheet" href="{% static 'akorzina/style.css' %}" />
   </head>
   <body>
     <div class="navbar-main">
@@ -38,7 +37,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="list-group">
-            <a href="{% url 'lampshades' %}" class="list-group-item"
+           <a href="{% url 'lampshades' %}" class="list-group-item"
               >Абажуры</a
             >
             <a href="{% url 'chandeliers' %}" class="list-group-item"
@@ -60,10 +59,10 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="{% static 'images/lampshades/cat_1.jpg' %}" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
-                  <a href="./catalog/lampshades.html">Абажуры</a>
+                  <a href="#">Зеракало_1</a>
                 </p>
                 <p class="product-desc">Описание1. ..</p>
                 <p class="product-price">Цена: KGS3000</p>
@@ -72,10 +71,10 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="{% static 'images/chandeliers/cat_2.jpg' %}" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
-                  <a href="{% url 'lampshades' %}">Люстры</a>
+                  <a href="#">Зеракало_2</a>
                 </p>
                 <p class="product-desc">Описание1. ..</p>
                 <p class="product-price">Цена: KGS3000</p>
@@ -84,10 +83,10 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="{% static 'images/mirrors/cat_3.jpg' %}" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
-                  <a href="{% url 'mirrors' %}">Зеркала</a>
+                  <a href="#">Зеракало_3</a>
                 </p>
                 <p class="product-desc">Описание1. ..</p>
                 <p class="product-price">Цена: KGS3000</p>
@@ -96,10 +95,10 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="{% static 'images/pano/pano/dog-sunglasses_ZVCXJVXL75.jpg' %}" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
-                  <a href="{% url 'pano' %}">Пано</a>
+                  <a href="#">Зеракало_4</a>
                 </p>
                 <p class="product-desc">Описание1. ..</p>
                 <p class="product-price">Цена: KGS3000</p>
@@ -109,10 +108,10 @@
             <div class="col-sm-4">
               <div class="product">
                 <div class="product-img">
-                  <a href="#"><img src="{% static 'images/other/pano/seagull-water_7IK961PQJI.jpg' %}" alt="somephoto" /></a>
+                  <a href="#"><img src="{% static 'images/mirrors/animal-dog_ZO5GDP2QY1.jpg' %}" alt="somephoto" /></a>
                 </div>
                 <p class="product-title">
-                  <a href="{% url 'other' %}">Прочее</a>
+                  <a href="#">Зеракало_5</a>
                 </p>
                 <p class="product-desc">Описание1. ..</p>
                 <p class="product-price">Цена: KGS3000</p>
@@ -150,7 +149,7 @@
       <div class="container-fluid my-5" style="background-color: aliceblue">
         <div class="global-footer">
           <div class="footer-block">
-            <img src="AK.png" alt="photo" width="60" />
+            <img src="{% static 'images/AK.png' %}" alt="photo" width="60" />
           </div>
           <div class="footer-block">
             <a href="#" style="font-weight: bold">Оформить заказ</a>
