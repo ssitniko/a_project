@@ -4,6 +4,7 @@ __pycache__/
 
 # Virtual environment
 .venv/
+.idea/
 
 # Django stuff:
 *.sqlite3
